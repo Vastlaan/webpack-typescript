@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap"
+    rel="stylesheet">
+  <title>Landing Page</title>
+</head>
+<body>
+  <!-- Navigation comes from partials -->
+  <nav></nav>
+
+  <!-- CallToAction -->
+  <section class='cta-info'>
+    <a href="tel:0031682307051" class='cta-info__link'>
+      <i class="bi bi-telephone"></i>
+      06 82 30 70 51
+    </a>
+    <a href="mailto:info@itcontext.nl" class='cta-info__link'>
+      <i class="bi bi-envelope"></i>
+      info@itcontext.nl
+    </a>
+  </section>
+  <!-- Header-->
+  <header class='header'>
+      <div class="header__info">
+        <div class="header__info--main">
+          <h1 id='landing-heading-main-header'>Archtek Architecten Studio</h1>
+        </div>
+        <p id='landing-heading-main-para'>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+          Quasi dolorum magnam facilis corrupti ducimus optio dolores officiis,
+           deleniti non, dolorem similique sunt nostrum nesciunt libero.
+        </p>
+        <div class="header__info--buttons">
+          <button class="btn-primary"><span>Portfolio</span></button>
+          <button class="btn-secondary"><span>Contact</span></button>
+        </div>
+      </div>
+      <div class="header__photo">
+        <div class="header__photo--box">
+          <img src="<%= require('../assets/header-landing.png') %>" alt="door">
+        </div>   
+      </div>
+  </header>
+  <!-- Info section -->
+  <section class="info">
+    <div class="info__narrow">
+      <div class="info__services">
+        <!-- 
+              badges come from components (js)
+        -->
+      </div>
+      <div class="info__about">
+        <h2 class='heading-3'>jouw dromen <span>bouwen</span></h2>
+        <p class="para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Eum mollitia, unde dolor maiores rerum corrupti qui voluptate repellat ipsum.
+        </p>
+        <p class="para-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Eum mollitia, unde dolor maiores rerum corrupti qui voluptate repellat ipsum.
+          Eum laboriosam maxime iste laudantium nemo natus? Voluptate dolores dolorum sed. Aut vero blanditiis mollitia!
+        </p>
+        <button class="info__about--button"><span>Read more</span></button>
+      </div>
+    </div>
+
+    <div class="info__narrow">
+      <div class="info__digits">
+        <div class="digit">
+          <h3 class="digit__number">233</h3>
+          <div class="digit__text">
+            <span>projects</span>
+            <span>accomplished</span>
+          </div>
+        </div>
+        <div class="digit">
+          <h3 class="digit__number">193</h3>
+          <div class="digit__text">
+            <span>projects</span>
+            <span>accomplished</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+
+  <section class="portfolio">
+    <div class="portfolio__grid">
+
+      <div class='portfolio__heading'>
+        <h1>Portfolio</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, molestias.</p>
+      </div>
+
+      <div class="project project-1">
+        <div class="project__image">
+          <div class="project__image--img">
+            <img src=<%= require("../assets/portfolio-1.jpg") %> alt="building">
+          </div>
+        </div>
+        <h6 class="project__category">Some Category</h6>
+        <h3 class="project__heading">This is a <span>title</span></h3>
+        <p class="project__text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Vero ipsum voluptatem facere iusto ut voluptas aspernatur minus inventore quasi. Natus?
+        </p>
+      </div>
+
+      <div class="project project-2">
+        <div class="project__image">
+          <div class="project__image--img">
+            <img src=<%= require("../assets/portfolio-2.jpg") %> alt="building">
+          </div>
+        </div>
+        <h6 class="project__category">Some Category</h6>
+        <h3 class="project__heading">This is a <span>title</span></h3>
+        <p class="project__text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Vero ipsum voluptatem facere iusto ut voluptas aspernatur minus inventore quasi. Natus?
+        </p>
+      </div>
+
+      <div class="project project-3">
+        <div class="project__image">
+          <div class="project__image--img">
+            <img src=<%= require("../assets/portfolio-3.jpg") %> alt="building">
+          </div>
+        </div>
+        <h6 class="project__category">Some Category</h6>
+        <h3 class="project__heading">This is a <span>title</span></h3>
+        <p class="project__text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Vero ipsum voluptatem facere iusto ut voluptas aspernatur minus inventore quasi. Natus?
+        </p>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Pricing -->
+
+  <section class="pricing">
+    <div class="pricing__narrow">
+      <div class='pricing__heading'>
+        <h1>Prijzen & Plans</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, molestias.</p>
+      </div>
+      <div class="pricing__cards">
+
+        <div class="card">
+          <div class="card__plan">
+            <h3>Basic Plan</h3>
+          </div>
+          <div class="card__price">
+            <p class="card__price--currency">&euro;</p>
+            <p class="card__price--amount">50</p>
+            <p class="card__price--period">/m2</p>
+          </div>
+          <div class="card__disclaimer">
+            <p>the price includes 22% of tax</p>
+          </div>
+          <ul class="card__features">
+            <li>survey & preliminary sketches</li>
+            <li>3D sketches</li>
+            <li>materials & building</li>
+          </ul>
+          <div class="card__button">
+            <button><span>Start my project</span></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__plan">
+            <h3>Basic Plan</h3>
+          </div>
+          <div class="card__price">
+            <p class="card__price--currency">&euro;</p>
+            <p class="card__price--amount">90</p>
+            <p class="card__price--period">/m2</p>
+          </div>
+          <div class="card__disclaimer">
+            <p>the price includes 22% of tax</p>
+          </div>
+          <ul class="card__features">
+            <li>survey & preliminary sketches</li>
+            <li>3D sketches</li>
+            <li>materials & building</li>
+          </ul>
+          <div class="card__button">
+            <button><span>Start my project</span></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__plan">
+            <h3>Basic Plan</h3>
+          </div>
+          <div class="card__price">
+            <p class="card__price--currency">&euro;</p>
+            <p class="card__price--amount">150</p>
+            <p class="card__price--period">/m2</p>
+          </div>
+          <div class="card__disclaimer">
+            <p>the price includes 22% of tax</p>
+          </div>
+          <ul class="card__features">
+            <li>survey & preliminary sketches and groom</li>
+            <li>3D sketches</li>
+            <li>materials & building</li>
+          </ul>
+          <div class="card__button">
+            <button>Start my project</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- News -->
+  
+  <section class="news">
+    
+      <div class='news__heading'>
+        <h1>Belangrijke informaties</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, molestias.</p>
+      </div>
+      <div class="news__articles">
+
+        <article class="article">
+          <div class="article__image">
+            <div class="article__image--img">
+              <img src="<%= require('../assets/portfolio-1.jpg') %>" alt="house">
+            </div>
+          </div>
+          <div class="article__main">
+            <div class="article__main--date">
+              <p class="article__main--date-day">20</p>
+              <p class="article__main--date-month">September</p>
+              <p class="article__main--date-year">2021</p>
+            </div>
+            <div class="article__main--details">
+              <div class="article__main--details-title">
+                Some random title from the Api endpoint
+              </div>
+              <div class="article__main--details-author">
+                Some random description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, mollitia.
+              </div>
+              <div class="article__main--details-button">
+                <a href="/">read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="article">
+          <div class="article__image">
+            <div class="article__image--img">
+              <img src="<%= require('../assets/portfolio-2.jpg') %>" alt="house">
+            </div>
+          </div>
+          <div class="article__main">
+            <div class="article__main--date">
+              <p class="article__main--date-day">20</p>
+              <p class="article__main--date-month">September</p>
+              <p class="article__main--date-year">2021</p>
+            </div>
+            <div class="article__main--details">
+              <div class="article__main--details-title">
+                Some random title from the Api endpoint
+              </div>
+              <div class="article__main--details-author">
+                Some random description Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, mollitia.
+              </div>
+              <div class="article__main--details-button">
+                <a href="/">read more <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <footer >
+    <div class="container_narrow">
+      <div class="footer">
+        <div class="footer__contact">
+          <h5><span>A</span>rchtek</h5>
+          <p>Specialisten in Architecture</p>
+          <a href="tel:0031682307051" class='footer__contact--link'>     
+            tel. 06 82 30 70 51
+          </a>
+          <a href="mailto:info@itcontext.nl" class='footer__contact--link'>
+            info@itcontext.nl
+          </a>
+          <div class="footer__contact--social">
+            <i class="bi bi-linkedin footer__contact--social-icon1"></i>
+            <i class="bi bi-facebook footer__contact--social-icon2"></i>
+          </div>
+        </div>
+        <ul class="footer__links">
+          <h3>Interior</h3>
+          <a href="/"><li>indoor arrangements</li></a>
+          <a href=""><li>design</li></a>
+          <a href=""><li>materials</li></a>
+        </ul>
+        <ul class="footer__links">
+          <h3>Outdoor</h3>
+          <a href=""><li>sketches</li></a>
+          <a href=""><li>technical support</li></a>
+          <a href=""><li>materials</li></a>
+        </ul>
+        
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+.nav {
+    padding: 0 1.4rem;
+    border-bottom: 1px solid rgba($color-grey2, 0.3);
+    display: flex;
+    align-items: center;
+
+    @include respond("m") {
+        padding: 0 2.7rem;
+    }
+
+    &__links {
+        margin-left: auto;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+
+        @include respond("m") {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &--active {
+            color: $color-primary;
+        }
+    }
+    &__lang {
+        border-left: 1px solid rgba($color-grey2, 0.3);
+        display: flex;
+        align-items: center;
+
+        &--icon1 {
+            @include iconSmall;
+            &:hover {
+                color: $color-info;
+            }
+        }
+        &--icon2 {
+            @include iconSmall;
+            &:hover {
+                color: $color-blue;
+            }
+        }
+        &--icon3 {
+            @include icon;
+            color: $color-primary;
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+}

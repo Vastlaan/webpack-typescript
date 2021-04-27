@@ -1,0 +1,194 @@
+// Containers
+@mixin containerNarrow {
+    max-width: 965px;
+    margin: 0 auto;
+    padding: 1.4rem;
+}
+@mixin flexCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+// Icons
+@mixin icon {
+    margin: 1.4rem;
+    font-size: 2.2rem;
+    color: $color-grey1;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+@mixin iconSmall {
+    margin: 0.9rem;
+    font-size: 1.6rem;
+    color: $color-grey1;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+//typography
+
+@mixin heading-category {
+    font-family: $font-heading;
+    font-style: italic;
+    font-weight: 300;
+    text-transform: lowercase;
+    letter-spacing: 0.2rem;
+}
+@mixin heading-medium {
+    font-family: $font-heading;
+    font-size: 3.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+
+    span {
+        color: $color-primary;
+    }
+}
+@mixin heading-small {
+    font-family: $font-para;
+    font-size: 1.9rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    span {
+        color: $color-primary;
+    }
+}
+
+@mixin heading-extrasmall {
+    font-family: $font-para;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: $color-grey1;
+}
+
+@mixin para-1 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-family: $font-para;
+    color: $color-grey2;
+    letter-spacing: 0.2rem;
+    line-height: 1.6;
+}
+
+@mixin para-thick {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+@mixin para-small {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+// Buttons
+
+@mixin btn-primary {
+    padding: 1.4rem 2.7rem;
+    z-index: 2;
+    margin-right: 1.4rem;
+    letter-spacing: 0.2rem;
+    position: relative;
+    overflow: hidden;
+
+    span {
+        display: block;
+        position: static;
+        z-index: 2;
+        color: $color-grey1;
+        font-size: 1.6rem;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        transition: all 0.6s;
+        background-image: linear-gradient(
+            to top left,
+            $color-grey2 10%,
+            $color-primary 11%,
+            $color-primary 90%,
+            $color-grey2 91%
+        );
+    }
+
+    &:hover {
+        &::after {
+            transform: scale(2);
+        }
+    }
+}
+@mixin btn-secondary {
+    padding: 1.4rem 2.7rem;
+    color: $color-grey1;
+    font-size: 1.6rem;
+    margin-right: 1.4rem;
+    letter-spacing: 0.2rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+
+    span {
+        display: block;
+        position: static;
+        z-index: 2;
+        color: $color-grey1;
+        font-size: 1.6rem;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        transition: all 0.6s;
+        transform: scale(1);
+        background-image: linear-gradient(
+            to bottom right,
+            $color-grey2 10%,
+            $color-secondary 11%,
+            $color-secondary 90%,
+            $color-grey2 91%
+        );
+    }
+
+    &:hover {
+        &::after {
+            transform: scale(2);
+        }
+    }
+}
+
+@mixin btn-grey {
+    padding: 1.4rem 2.7rem;
+    color: $color-grey1;
+    font-size: 1.6rem;
+    margin-right: 1.4rem;
+    letter-spacing: 0.2rem;
+    transition: all 0.3s;
+    background-color: $color-grey4;
+    border: 1px solid transparent;
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $color-grey4;
+        color: $color-grey4;
+    }
+}

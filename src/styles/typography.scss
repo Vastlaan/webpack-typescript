@@ -1,0 +1,86 @@
+h1 {
+    font-family: $font-heading;
+    font-size: 5.7rem;
+    font-weight: 500;
+    max-width: 65rem;
+    color: currentColor;
+    line-height: 1;
+    letter-spacing: 0.3rem;
+    text-shadow: 0.2rem 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin: 2.7rem 0;
+}
+h2 {
+    font-family: $font-heading;
+    font-size: 3.7rem;
+    font-weight: 400;
+}
+h3 {
+    font-family: $font-heading;
+    font-size: 1.9rem;
+    font-weight: 300;
+}
+h4 {
+    font-family: $font-para;
+    text-transform: uppercase;
+    color: $color-grey1;
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-family: $font-para;
+    color: $color-grey2;
+    letter-spacing: 0.2rem;
+    line-height: 1.6;
+}
+
+.heading-3 {
+    font-family: $font-heading;
+    font-size: 2.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 1.4rem;
+    position: relative;
+
+    span {
+        color: $color-secondary;
+        font-weight: 700;
+    }
+
+    &::before {
+        content: "";
+        height: 100%;
+        width: 0.5rem;
+        position: absolute;
+        top: 0;
+        left: -1.4rem;
+        background-color: $color-secondary;
+    }
+}
+
+.para-1 {
+    font-size: 1.4rem;
+    font-family: $font-para;
+    letter-spacing: normal;
+    line-height: 1.6;
+    font-weight: 600;
+    color: $color-grey5;
+}
+.para-2 {
+    font-size: 1.4rem;
+    font-family: $font-para;
+    letter-spacing: normal;
+    line-height: 1.6;
+    font-weight: 500;
+    color: $color-grey4;
+}
+.para-3 {
+    font-size: 1.4rem;
+    font-family: $font-para;
+    letter-spacing: normal;
+    margin: 1.4rem 0;
+    line-height: 1.6;
+    font-weight: 500;
+    color: $color-grey4;
+}
